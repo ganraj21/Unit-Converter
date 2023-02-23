@@ -70,7 +70,7 @@ const App = () => {
       </form>
       {result && (
         <div className="text-center mt-4">
-          <p className="text-white-700 font-bold">
+          <p className="text-white font-bold">
             Result: {result.toFixed(2)} {unit === "km" ? "Miles" : "Kilometers"}
           </p>
         </div>
