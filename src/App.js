@@ -27,10 +27,10 @@ const App = () => {
   };
 
   return (
-    <div className="w-full max-w-sm mx-auto mt-10 p-10">
+    <div className="w-full mx-auto p-10 h-screen flex flex-col items-center justify-center bg-gray-700">
       <form
         onSubmit={handleSubmit}
-        className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+        className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 h-[320px] gap-3 flex flex-col"
       >
         <div className="mb-4">
           <label className="block text-gray-700 font-bold mb-2" htmlFor="value">
@@ -39,7 +39,7 @@ const App = () => {
           <input
             type="number"
             id="value"
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline border-solid"
             value={value}
             onChange={handleChange}
             required
@@ -61,7 +61,7 @@ const App = () => {
         </div>
         <div className="flex items-center justify-between">
           <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
             type="submit"
           >
             Convert
@@ -70,7 +70,7 @@ const App = () => {
       </form>
       {result && (
         <div className="text-center mt-4">
-          <p className="text-gray-700">
+          <p className="text-white-700 font-bold">
             Result: {result.toFixed(2)} {unit === "km" ? "Miles" : "Kilometers"}
           </p>
         </div>
