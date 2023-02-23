@@ -27,7 +27,7 @@ const App = () => {
   };
 
   return (
-    <div className="w-full mx-auto p-10 h-screen flex flex-col items-center justify-center bg-gray-700">
+    <div className="w-full mx-auto p-10 h-screen flex flex-col items-center justify-center bg-[#a000c0a8]">
       <form
         onSubmit={handleSubmit}
         className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 h-[320px] gap-3 flex flex-col"
