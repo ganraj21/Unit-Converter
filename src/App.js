@@ -30,7 +30,7 @@ const App = () => {
     <div className="w-full mx-auto h-screen flex flex-col items-center justify-center bg-[#a000c0a8]">
       <form
         onSubmit={handleSubmit}
-        className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-[25%] gap-3 flex flex-col"
+        className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 gap-3 flex flex-col"
       >
         <div className="mb-4">
           <label className="block text-gray-700 font-bold mb-2" htmlFor="value">
